@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 
 <meta name="viewport"
@@ -10,7 +9,8 @@
 
 <title>For You, Birthday Girl 💗</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
 
 <link rel="preconnect"
       href="https://fonts.gstatic.com"
@@ -37,13 +37,9 @@ html{
 }
 
 body{
-
     font-family:'Poppins',sans-serif;
-
     color:#633b51;
-
     background:#fff6fa;
-
     overflow-x:hidden;
 }
 
@@ -59,15 +55,11 @@ button{
 #lockScreen{
 
     position:fixed;
-
     inset:0;
-
     z-index:99999;
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
 
     background:
@@ -97,11 +89,13 @@ button{
 .lock-decoration{
 
     position:absolute;
-
     font-size:35px;
 
-    animation:floatDecoration 5s
-               infinite ease-in-out;
+    animation:
+        floatDecoration
+        5s
+        infinite
+        ease-in-out;
 }
 
 .d1{
@@ -131,7 +125,6 @@ button{
 .lock-box{
 
     width:90%;
-
     max-width:420px;
 
     padding:45px 28px;
@@ -140,13 +133,11 @@ button{
 
     border-radius:35px;
 
-    background:
-        rgba(255,255,255,.75);
+    background:rgba(255,255,255,.78);
 
     backdrop-filter:blur(20px);
 
-    border:2px solid
-           rgba(255,255,255,.9);
+    border:2px solid rgba(255,255,255,.9);
 
     box-shadow:
         0 30px 80px
@@ -160,8 +151,10 @@ button{
 
     font-size:75px;
 
-    animation:heartbeat 1.5s
-               infinite;
+    animation:
+        heartbeat
+        1.5s
+        infinite;
 }
 
 
@@ -189,7 +182,7 @@ button{
 }
 
 
-/* PIN */
+/* PIN DOTS */
 
 .pin-display{
 
@@ -206,7 +199,6 @@ button{
 .dot{
 
     width:15px;
-
     height:15px;
 
     border-radius:50%;
@@ -243,7 +235,6 @@ button{
 .key{
 
     width:65px;
-
     height:65px;
 
     border:none;
@@ -319,13 +310,11 @@ button{
     position:fixed;
 
     top:20px;
-
     right:20px;
 
     z-index:5000;
 
     width:52px;
-
     height:52px;
 
     border:none;
@@ -373,6 +362,8 @@ button{
     text-align:center;
 
     padding:40px 20px;
+
+    position:relative;
 
     overflow:hidden;
 
@@ -495,11 +486,9 @@ button{
     position:absolute;
 
     bottom:0;
-
     left:0;
 
     width:100%;
-
     height:200px;
 
     pointer-events:none;
@@ -672,7 +661,7 @@ button{
         rgba(170,70,110,.1);
 
     border:2px solid
-           rgba(255,220,235,.7);
+        rgba(255,220,235,.7);
 
     transition:.4s;
 
@@ -695,13 +684,11 @@ button{
 .card-icon{
 
     width:75px;
-
     height:75px;
 
     display:flex;
 
     justify-content:center;
-
     align-items:center;
 
     margin:0 auto 20px;
@@ -745,7 +732,6 @@ button{
     position:absolute;
 
     top:12px;
-
     right:18px;
 
     font-size:18px;
@@ -861,7 +847,7 @@ button{
 
 
 /* =====================================================
-   GIF
+   FIRST GIF BREAK
 ===================================================== */
 
 .gif-section{
@@ -965,7 +951,6 @@ button{
     position:absolute;
 
     top:-38px;
-
     left:50%;
 
     transform:translateX(-50%);
@@ -1105,10 +1090,10 @@ button{
 
 
 /* =====================================================
-   HER LITTLE GALLERY
+   CUTE HUG + RANDOM GIF SECTION
 ===================================================== */
 
-.gallery-section{
+.gif-corner{
 
     padding:110px 20px;
 
@@ -1132,158 +1117,142 @@ button{
 }
 
 
-.photo-grid{
+.gif-grid{
 
-    max-width:1050px;
+    max-width:950px;
 
     margin:auto;
 
     display:grid;
 
     grid-template-columns:
-        repeat(3,1fr);
+        repeat(2,1fr);
 
     gap:35px;
-
-    align-items:center;
 }
 
 
-.photo-card{
+.gif-card{
 
     background:white;
 
-    padding:14px 14px 22px;
+    padding:18px;
 
-    border-radius:8px;
+    border-radius:30px;
 
     box-shadow:
-        0 15px 40px
-        rgba(150,65,100,.14);
+        0 18px 50px
+        rgba(150,65,100,.12);
 
-    transition:.5s;
+    border:2px solid
+        rgba(255,220,235,.8);
 
-    position:relative;
+    transition:.4s;
 }
 
 
-.photo-card:hover{
+.gif-card:hover{
 
     transform:
-        translateY(-12px)
-        rotate(0deg)
-        scale(1.03);
+        translateY(-10px)
+        rotate(1deg);
 
     box-shadow:
-        0 25px 55px
-        rgba(150,65,100,.2);
+        0 25px 60px
+        rgba(150,65,100,.18);
 }
 
 
-.photo-frame{
+.gif-box{
 
     width:100%;
 
-    height:270px;
+    height:300px;
 
     overflow:hidden;
 
-    background:#f8e6ee;
+    border-radius:22px;
+
+    background:#ffeaf2;
 }
 
 
-.photo-frame img{
+.gif-box img{
 
     width:100%;
-
     height:100%;
 
     object-fit:cover;
 
     display:block;
-
-    transition:.5s;
 }
 
 
-.photo-card:hover img{
-
-    transform:scale(1.05);
-}
-
-
-.photo-card p{
+.gif-text{
 
     text-align:center;
 
-    margin-top:15px;
+    padding:22px 10px 10px;
+}
+
+
+.gif-text span{
+
+    font-size:30px;
+}
+
+
+.gif-text h3{
 
     font-family:'Comfortaa';
 
-    color:#8b5971;
+    color:#c94380;
+
+    font-size:20px;
+
+    margin:10px 0;
+}
+
+
+.gif-text p{
+
+    color:#876076;
+
+    line-height:1.7;
 
     font-size:14px;
 }
 
 
-/* POLAROID ANGLES */
+.tiny-message{
 
-.card-one{
+    max-width:700px;
 
-    transform:rotate(-3deg);
-}
+    margin:45px auto 0;
 
-.card-two{
+    padding:18px 25px;
 
-    transform:rotate(2deg);
-}
+    border-radius:30px;
 
-.card-three{
+    background:white;
 
-    transform:rotate(-2deg);
-}
+    text-align:center;
 
-.card-four{
+    color:#c94380;
 
-    transform:rotate(3deg);
-}
+    font-family:'Comfortaa';
 
-.card-five{
+    font-size:14px;
 
-    transform:rotate(-2deg);
-}
-
-.card-six{
-
-    transform:rotate(2deg);
+    box-shadow:
+        0 10px 30px
+        rgba(170,70,110,.08);
 }
 
 
-/* TAPE */
+.tiny-message span{
 
-.photo-card::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:70px;
-
-    height:22px;
-
-    background:#ffd7e5;
-
-    opacity:.8;
-
-    top:-10px;
-
-    left:50%;
-
-    transform:
-        translateX(-50%)
-        rotate(-2deg);
-
-    z-index:2;
+    margin:0 10px;
 }
 
 
@@ -1402,7 +1371,7 @@ button{
 
 
 /* =====================================================
-   FLOATING
+   FLOATING ELEMENTS
 ===================================================== */
 
 .floating{
@@ -1606,10 +1575,22 @@ button{
             1fr 1fr;
     }
 
-    .photo-grid{
+}
 
-        grid-template-columns:
-            1fr 1fr;
+
+@media(max-width:650px){
+
+    .gif-grid{
+
+        grid-template-columns:1fr;
+
+        max-width:450px;
+    }
+
+
+    .gif-box{
+
+        height:280px;
     }
 
 }
@@ -1620,61 +1601,44 @@ button{
     .section{
 
         padding:75px 16px;
-
     }
 
     .card-container{
 
         grid-template-columns:1fr;
-
     }
 
     .little-grid{
 
         grid-template-columns:
             1fr 1fr;
-
     }
 
     .wishes-container{
 
         grid-template-columns:1fr;
-
-    }
-
-    .photo-grid{
-
-        grid-template-columns:1fr;
-
-        max-width:400px;
-
     }
 
     .letter{
 
         padding:55px 25px;
-
     }
 
     .keypad{
 
         grid-template-columns:
             repeat(3,58px);
-
     }
 
     .key{
 
         width:58px;
-
         height:58px;
-
     }
 
     .section-title h2{
 
         font-size:35px;
-
     }
 
 }
@@ -1739,11 +1703,8 @@ button{
         <div class="pin-display">
 
             <div class="dot"></div>
-
             <div class="dot"></div>
-
             <div class="dot"></div>
-
             <div class="dot"></div>
 
         </div>
@@ -1757,66 +1718,55 @@ button{
                 1
             </button>
 
-
             <button class="key"
                     onclick="press(2)">
                 2
             </button>
-
 
             <button class="key"
                     onclick="press(3)">
                 3
             </button>
 
-
             <button class="key"
                     onclick="press(4)">
                 4
             </button>
-
 
             <button class="key"
                     onclick="press(5)">
                 5
             </button>
 
-
             <button class="key"
                     onclick="press(6)">
                 6
             </button>
-
 
             <button class="key"
                     onclick="press(7)">
                 7
             </button>
 
-
             <button class="key"
                     onclick="press(8)">
                 8
             </button>
-
 
             <button class="key"
                     onclick="press(9)">
                 9
             </button>
 
-
             <button class="key"
                     onclick="clearPin()">
                 ⌫
             </button>
 
-
             <button class="key"
                     onclick="press(0)">
                 0
             </button>
-
 
             <button class="key"
                     onclick="checkPin()">
@@ -1843,7 +1793,7 @@ button{
 <div id="mainPage">
 
 
-<!-- MUSIC -->
+<!-- MUSIC BUTTON -->
 
 <button class="music-button"
         onclick="toggleMusic()"
@@ -1853,6 +1803,8 @@ button{
 
 </button>
 
+
+<!-- MUSIC FILE -->
 
 <audio id="music" loop>
 
@@ -1879,17 +1831,13 @@ button{
 
 
     <h1>
-
         Happy Birthday! 🎂
-
     </h1>
 
 
     <h2>
-
         To one of the most wonderful
         people ever 💗
-
     </h2>
 
 
@@ -1913,7 +1861,6 @@ button{
         ↓ Scroll down, birthday girl 🎀
 
     </div>
-
 
 
     <!-- FLOWERS -->
@@ -2034,9 +1981,7 @@ button{
 
         <div class="cute-card">
 
-            <span class="card-sparkle">
-                ✨
-            </span>
+            <span class="card-sparkle">✨</span>
 
             <div class="card-icon">
                 😊
@@ -2058,9 +2003,7 @@ button{
 
         <div class="cute-card">
 
-            <span class="card-sparkle">
-                🌸
-            </span>
+            <span class="card-sparkle">🌸</span>
 
             <div class="card-icon">
                 🎀
@@ -2082,9 +2025,7 @@ button{
 
         <div class="cute-card">
 
-            <span class="card-sparkle">
-                💫
-            </span>
+            <span class="card-sparkle">💫</span>
 
             <div class="card-icon">
                 😂
@@ -2106,9 +2047,7 @@ button{
 
         <div class="cute-card">
 
-            <span class="card-sparkle">
-                💕
-            </span>
+            <span class="card-sparkle">💕</span>
 
             <div class="card-icon">
                 🌷
@@ -2129,9 +2068,7 @@ button{
 
         <div class="cute-card">
 
-            <span class="card-sparkle">
-                ⭐
-            </span>
+            <span class="card-sparkle">⭐</span>
 
             <div class="card-icon">
                 🧸
@@ -2153,9 +2090,7 @@ button{
 
         <div class="cute-card">
 
-            <span class="card-sparkle">
-                🌙
-            </span>
+            <span class="card-sparkle">🌙</span>
 
             <div class="card-icon">
                 💭
@@ -2352,92 +2287,50 @@ button{
 
 
         <div class="little-box">
-
             <span>🌸</span>
-
-            <p>
-                Your random little expressions
-            </p>
-
+            <p>Your random little expressions</p>
         </div>
 
 
         <div class="little-box">
-
             <span>😂</span>
-
-            <p>
-                The way you laugh at random things
-            </p>
-
+            <p>The way you laugh at random things</p>
         </div>
 
 
         <div class="little-box">
-
             <span>🎀</span>
-
-            <p>
-                Your cute little reactions
-            </p>
-
+            <p>Your cute little reactions</p>
         </div>
 
 
         <div class="little-box">
-
             <span>🌷</span>
-
-            <p>
-                The way you make conversations
-                interesting
-            </p>
-
+            <p>The way you make conversations interesting</p>
         </div>
 
 
         <div class="little-box">
-
             <span>✨</span>
-
-            <p>
-                Your random bursts of excitement
-            </p>
-
+            <p>Your random bursts of excitement</p>
         </div>
 
 
         <div class="little-box">
-
             <span>🐻</span>
-
-            <p>
-                Your soft and comforting side
-            </p>
-
+            <p>Your soft and comforting side</p>
         </div>
 
 
         <div class="little-box">
-
             <span>🌙</span>
-
-            <p>
-                The thoughts you don't always
-                say out loud
-            </p>
-
+            <p>The thoughts you don't always say out loud</p>
         </div>
 
 
         <div class="little-box">
-
             <span>💗</span>
-
-            <p>
-                Simply the fact that you're you
-            </p>
-
+            <p>Simply the fact that you're you</p>
         </div>
 
 
@@ -2448,7 +2341,7 @@ button{
 
 
 <!-- =====================================================
-     CUTE GIF
+     RANDOM CUTE GIF
 ===================================================== -->
 
 <section class="gif-section">
@@ -2461,13 +2354,12 @@ button{
 
     <div class="gif-wrapper">
 
-
         <img
-        src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif"
-        alt="Cute GIF">
-
+            src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif"
+            alt="Cute GIF">
 
     </div>
+
 
 </section>
 
@@ -2718,10 +2610,10 @@ button{
 
 
 <!-- =====================================================
-     HER LITTLE GALLERY
+     HUG + CUTE GIFS
 ===================================================== -->
 
-<section class="gallery-section">
+<section class="gif-corner">
 
 
     <div class="section-title">
@@ -2731,137 +2623,111 @@ button{
         </div>
 
         <h2>
-            A Little Gallery For You 📸
+            A Little Dose of Cuteness 🧸💗
         </h2>
 
         <p>
 
-            A few little pictures of someone
-            who deserves her own tiny gallery. 🌷
+            Because every birthday girl deserves
+            some virtual hugs and unnecessary
+            cuteness. 🌷
 
         </p>
 
     </div>
 
 
-    <div class="photo-grid">
+    <div class="gif-grid">
 
 
-        <!-- PHOTO 1 -->
+        <!-- HUG GIF -->
 
-        <div class="photo-card card-one">
+        <div class="gif-card">
 
-            <div class="photo-frame">
+
+            <div class="gif-box">
 
                 <img
-                src="photos/photo1.jpg"
-                alt="Her photo">
+                    src="https://media.giphy.com/media/od5H3PmEG5EVq/giphy.gif"
+                    alt="Cute hug">
 
             </div>
 
-            <p>
-                pretty girl energy 🎀
-            </p>
+
+            <div class="gif-text">
+
+                <span>🤗</span>
+
+                <h3>
+                    Sending You A Big Hug!
+                </h3>
+
+                <p>
+
+                    Consider this your tiny
+                    internet hug for today. 💗
+
+                </p>
+
+            </div>
+
 
         </div>
 
 
-        <!-- PHOTO 2 -->
 
-        <div class="photo-card card-two">
+        <!-- RANDOM CUTE GIF -->
 
-            <div class="photo-frame">
+        <div class="gif-card">
+
+
+            <div class="gif-box">
 
                 <img
-                src="photos/photo2.jpg"
-                alt="Her photo">
+                    src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif"
+                    alt="Cute GIF">
 
             </div>
 
-            <p>
-                that smile >>> 🌸
-            </p>
 
-        </div>
+            <div class="gif-text">
 
+                <span>🧸</span>
 
-        <!-- PHOTO 3 -->
+                <h3>
+                    Just Because You're Cute
+                </h3>
 
-        <div class="photo-card card-three">
+                <p>
 
-            <div class="photo-frame">
+                    No explanation needed.
+                    You're getting another
+                    cute GIF. 🎀
 
-                <img
-                src="photos/photo3.jpg"
-                alt="Her photo">
-
-            </div>
-
-            <p>
-                absolutely adorable 🧸
-            </p>
-
-        </div>
-
-
-        <!-- PHOTO 4 -->
-
-        <div class="photo-card card-four">
-
-            <div class="photo-frame">
-
-                <img
-                src="photos/photo4.jpg"
-                alt="Her photo">
+                </p>
 
             </div>
 
-            <p>
-                my favourite view 💗
-            </p>
-
-        </div>
-
-
-        <!-- PHOTO 5 -->
-
-        <div class="photo-card card-five">
-
-            <div class="photo-frame">
-
-                <img
-                src="photos/photo5.jpg"
-                alt="Her photo">
-
-            </div>
-
-            <p>
-                effortlessly beautiful ✨
-            </p>
-
-        </div>
-
-
-        <!-- PHOTO 6 -->
-
-        <div class="photo-card card-six">
-
-            <div class="photo-frame">
-
-                <img
-                src="photos/photo6.jpg"
-                alt="Her photo">
-
-            </div>
-
-            <p>
-                one of my favourite people 🌷
-            </p>
 
         </div>
 
 
     </div>
+
+
+    <div class="tiny-message">
+
+        🌸
+
+        <span>
+            You deserve approximately
+            837 more hugs than this.
+        </span>
+
+        🌸
+
+    </div>
+
 
 </section>
 
@@ -2890,7 +2756,7 @@ button{
         birthday world.
 
         But hopefully, this isn't the end
-        of all the beautiful memories
+        of all the beautiful moments
         waiting ahead.
 
     </p>
@@ -3046,7 +2912,7 @@ function checkPin(){
             startFloating();
 
 
-            /* START MUSIC */
+            /* MUSIC STARTS AFTER PASSWORD */
 
             music.volume = 0.35;
 
@@ -3103,7 +2969,7 @@ function checkPin(){
 
 
 /* =====================================================
-   FLOATING HEARTS
+   FLOATING HEARTS / FLOWERS
 ===================================================== */
 
 function createFloating(){
